@@ -1,4 +1,4 @@
-# In## Quick Download
+# Installation Guide
 
 [Download Extension (.crx)](https://github.com/AatreyuShau/lingo-surf/blob/main/chrome-extension.crx)
 

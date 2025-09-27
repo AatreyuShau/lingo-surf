@@ -61,7 +61,60 @@ Contributions are welcome! Feel free to:
 This project is licensed under the GNU gpl License; see the [LICENSE](LICENSE) file for details.
 
 ---
+```html
+<!-- HTML -->
+<div class="loader-container">
+  <div class="loader">
+    <svg class="loader-wave" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color: #43cea2"/>
+          <stop offset="100%" style="stop-color: #185a9d"/>
+        </linearGradient>
+      </defs>
+      <path d="M 0,15 C 20,15 20,5 40,5 C 60,5 60,15 80,15 C 100,15 100,5 120,5" 
+            stroke="url(#wave-grad)" 
+            fill="none" 
+            stroke-width="2">
+        <animate attributeName="d" 
+                 dur="3s" 
+                 repeatCount="indefinite" 
+                 values="M 0,15 C 20,15 20,5 40,5 C 60,5 60,15 80,15 C 100,15 100,5 120,5;
+                         M 0,5 C 20,5 20,15 40,15 C 60,15 60,5 80,5 C 100,5 100,15 120,15;
+                         M 0,15 C 20,15 20,5 40,5 C 60,5 60,15 80,15 C 100,15 100,5 120,5"/>
+      </path>
+    </svg>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.loader {
+  width: 120px;
+}
+
+.loader-wave {
+  width: 100%;
+  height: auto;
+}
+</style>
+```
+---
 
 <p align="center">
     Woven from words, code, & curiosity :]
 </p>
+
+---

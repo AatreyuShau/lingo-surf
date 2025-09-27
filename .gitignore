@@ -8,7 +8,6 @@ out/
 *.zip
 
 # Chrome Extension specific
-*.crx
 *.pem
 *.zip
 web-ext-artifacts/

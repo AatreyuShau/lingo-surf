@@ -71,10 +71,6 @@ Contributions are welcome! Feel free to:
 - Suggest new features
 - Submit pull requests
 
-## License
-
-This project is licensed under the GNU GPLv3.0 License; see the [LICENSE](LICENSE) file for details.
-
 ---
 
 <p align="center">
@@ -82,3 +78,5 @@ This project is licensed under the GNU GPLv3.0 License; see the [LICENSE](LICENS
 </p>
 
 ---
+
+This project is licensed under the GNU GPLv3.0 License; see the [LICENSE](LICENSE) file for details.

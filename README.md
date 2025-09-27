@@ -1,6 +1,5 @@
 # <img src="chrome-extension/icon128.png" alt="Lingo Surf Icon" width="32" style="vertical-align: middle;"> Lingo Surf 🥝
 
-[![License](https://img.shields.io/github/license/AatreyuShau/lingo-surf)](https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE)
 ![Chrome Web Store](https://img.shields.io/badge/Platform-Chrome-green)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 

@@ -9,6 +9,7 @@ This guide will walk you through the process of installing Lingo Surf.
 <a href="https://raw.githubusercontent.com/AatreyuShau/lingo-surf/main/chrome-extension.crx" download>
     Download Extension (.crx)
 </a>
+<img src="docs/installation/Download crx.png" alt="Download raw file" width="600"/>
 
 ## Step-by-Step Installation after downloading the .crx file
 
@@ -25,7 +26,7 @@ This guide will walk you through the process of installing Lingo Surf.
 - You'll see new options appear at the top of the page
 
 ### Step 2: Load the Extension
-<img src="docs/installation/Step2.png" alt="Open Chrome Extensions page" width="600"/>
+<img src="docs/installation/Step2.png" alt="Load the Extension" width="600"/>
 
 - Click the "Load unpacked" button
 - Navigate to the `chrome-extension` folder inside the downloaded/cloned repository
@@ -33,8 +34,8 @@ This guide will walk you through the process of installing Lingo Surf.
 - Click "Select Folder" (macOS) or "Select" (Windows)
 
 ### Step 3: Verify Installation
-<img src="docs/installation/Step3.png" alt="Enable Developer Mode" width="600"/>
-<img src="docs/installation/Step4.png" alt="Load Unpacked Extension" width="600"/>
+<img src="docs/installation/Step3.png" alt="Accept" width="600"/>
+<img src="docs/installation/Step4.png" alt="Click Three dots" width="600"/>
 <img src="docs/installation/Step5.png" alt="Verify Installation" width="600"/>
 
 - You should see "Lingo Surf" appear in your extensions list

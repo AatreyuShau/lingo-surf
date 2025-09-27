@@ -73,7 +73,7 @@ Contributions are welcome! Feel free to:
 
 ## License
 
-This project is licensed under the GNU gpl License; see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU GPLv3.0 License; see the [LICENSE](LICENSE) file for details.
 
 ---
 

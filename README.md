@@ -21,16 +21,27 @@ A sleek Chrome extension for seamless language learning while you surf the web. 
 
 ## Installation
 
-   - Download the .crx file
+   - Download the `.crx` file
     >> <a href="https://github.com/AatreyuShau/lingo-surf/blob/main/chrome-extension.crx" download>
         Download Extension (.crx)
     </a>
    - Open Chrome and go to `chrome://extensions`
    - Turn on `Developer Mode`
-   - Drag the .crx file in
+   - Drag the `.crx` file in
    - click the ` ⠇ ` and press *`Keep this Extension`*
 
  > For a more detailed guide check the ![Installation Guide](https://github.com/AatreyuShau/lingo-surf/blob/main/INSTALLATION.md)
+
+ ## Alternative Installation
+
+   - Download the `.zip` file
+    >> <a href="https://github.com/AatreyuShau/lingo-surf/blob/main/chrome-extension.zip" download>
+        Download Extension (.zip)
+    </a>
+   - Expand the `.zip` file in your file-explorer
+   - Open Chrome and go to `chrome://extensions`
+   - Turn on `Developer Mode`
+   - Drag the `.zip` file in
 
 ## How to Use
 

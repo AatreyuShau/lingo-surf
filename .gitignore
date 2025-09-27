@@ -5,11 +5,9 @@ node_modules/
 dist/
 build/
 out/
-*.zip
 
 # Chrome Extension specific
 *.pem
-*.zip
 web-ext-artifacts/
 
 # IDE-specific files

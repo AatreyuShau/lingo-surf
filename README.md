@@ -1,4 +1,4 @@
-# Lingo Surf 🌊
+# Lingo Surf 🥝
 
 [![License](https://img.shields.io/github/license/AatreyuShau/lingo-surf)](https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE)
 ![Chrome Web Store](https://img.shields.io/badge/Platform-Chrome-green)
@@ -7,7 +7,7 @@
 A sleek Chrome extension for seamless language learning while you surf the web. Translate words on any webpage with a beautiful, modern interface.
 
 <p align="center">
-  <img src="docs/screenshot.png" alt="Lingo Surf Screenshot" width="400"/>
+  <img src="docs/example.png" alt="Lingo Surf Popup Window" width="400"/>
 </p>
 
 ## Features

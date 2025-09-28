@@ -1,9 +1,13 @@
 let ACTIVE = false;
 let originalTexts = new Map();
-document.head.appendChild(Object.assign(document.createElement('link'), {
-  rel: 'stylesheet',
-  href: chrome.runtime.getURL('loader.css')
-}));
+
+// Add loader CSS
+const loaderLink = document.createElement('link');
+loaderLink.rel = 'stylesheet';
+loaderLink.href = chrome.runtime.getURL('loader.css');
+document.head.appendChild(loaderLink);
+
+// Add styles
 const style = document.createElement('style');
 style.textContent = `
   .lingo-surf-loader-container {
@@ -23,7 +27,7 @@ style.textContent = `
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
-  
+
   .lingo-surf-loader-container.active {
     opacity: 1;
     visibility: visible;
@@ -33,11 +37,10 @@ style.textContent = `
     cursor: help;
     transition: all 0.2s;
     box-decoration-break: clone;
-    margin: 0;
-    padding: 0;
     display: inline;
     border-radius: 4px;
   }
+
   .lingo-surf-highlight:hover {
     margin: 1.5px 1.5px;
     scale: 1.1;
@@ -47,8 +50,8 @@ style.textContent = `
     outline-offset: -1px;
     border-radius: 8px;
   }
+
   .lingo-surf-highlight.showing-original {
-    margin: 0;
     padding: 2px 2px;
     background: #00c1846f;
     outline: 1px solid #3ec491ff;
@@ -61,7 +64,8 @@ document.head.appendChild(style);
 async function translateTextRemote(text, targetLang) {
   if (!text.trim()) return text;
   try {
-    const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=' + encodeURIComponent(targetLang) + '&dt=t&q=' + encodeURIComponent(text);
+    const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=' +
+      encodeURIComponent(targetLang) + '&dt=t&q=' + encodeURIComponent(text);
     const resp = await fetch(url);
     const data = await resp.json();
     return data[0].map(s => s[0]).join('');
@@ -71,71 +75,52 @@ async function translateTextRemote(text, targetLang) {
   }
 }
 
+function splitIntoSentences(text) {
+  return text.match(/[^.!?]+(?:[.!?…]+|\s*$)/g) || [];
+}
+
 async function translateNode(node, targetLang) {
   if (node.nodeType === Node.TEXT_NODE) {
-    const text = node.textContent.trim();
+    const text = node.textContent;
     if (text && !['SCRIPT', 'STYLE', 'NOSCRIPT'].includes(node.parentElement?.tagName)) {
-      //split
-      const parts = text.split(/(\s+)/);
-      
-      //wrapper
+      const sentences = splitIntoSentences(text);
       const wrapper = document.createElement('span');
       wrapper.className = 'lingo-surf-wrapper';
-      
-      for (let i = 0; i < parts.length; i++) {
-        const part = parts[i];
-        if (part.trim()) {
-          if (!originalTexts.has(node)) {
-            originalTexts.set(node, text);
-          }
-          
-          const translated = await translateTextRemote(part, targetLang);
-          const span = document.createElement('span');
-          span.className = 'lingo-surf-highlight';
-          span.textContent = translated;
-          
-          span.dataset.translated = translated;
-          span.dataset.original = part;
-          
-          let isHovered = false;
-          
-          const toggleTranslation = (span) => {
-            const isShowingOriginal = span.classList.contains('showing-original');
-            span.textContent = isShowingOriginal ? span.dataset.translated : span.dataset.original;
-            span.classList.toggle('showing-original');
-          };
-          
-          ///
-          span.addEventListener('mouseenter', function(e) {
-            isHovered = true;
-          });
-          
-          span.addEventListener('mouseleave', function(e) {
-            isHovered = false;
-          });
-          
-          if (!document.hasSpaceHandler) {
-            document.hasSpaceHandler = true;
-            document.addEventListener('keydown', function(e) {
-              if (e.code === 'Space' && ACTIVE) {
-                e.preventDefault();
-                
-                document.querySelectorAll('.lingo-surf-highlight').forEach(span => {
-                  if (span.matches(':hover')) {
-                    toggleTranslation(span);
-                  }
-                });
-              }
-            });
-          };
-          
-          wrapper.appendChild(span);
-        } else {
-          wrapper.appendChild(document.createTextNode(part));
+
+      let hadTranslation = false;
+
+      for (const sentence of sentences) {
+        const trimmed = sentence.trim();
+        if (trimmed.length === 0) {
+          wrapper.appendChild(document.createTextNode(sentence));
+          continue;
         }
+
+        const translated = await translateTextRemote(trimmed, targetLang);
+
+        const span = document.createElement('span');
+        span.className = 'lingo-surf-highlight';
+        span.textContent = translated;
+        span.dataset.translated = translated;
+        span.dataset.original = sentence;
+        
+        span.addEventListener('mouseenter', () => {
+          span.dataset.hovered = 'true';
+        });
+        span.addEventListener('mouseleave', () => {
+          span.dataset.hovered = 'false';
+        });
+
+        wrapper.appendChild(span);
+        hadTranslation = true;
       }
-      
-      node.parentNode.replaceChild(wrapper, node);
+
+      if (hadTranslation) {
+        if (!originalTexts.has(node)) {
+          originalTexts.set(node, text);
+        }
+        node.parentNode.replaceChild(wrapper, node);
+      }
     }
   }
 }
@@ -159,18 +144,16 @@ function restoreOriginalTexts() {
   originalTexts.clear();
 }
 
+//loader
 function createLoader() {
   const loaderContainer = document.createElement('div');
   loaderContainer.className = 'lingo-surf-loader-container';
-  
-  //insert loader HTML
   fetch(chrome.runtime.getURL('loader.html'))
     .then(response => response.text())
     .then(html => {
       loaderContainer.innerHTML = html;
       document.body.appendChild(loaderContainer);
     });
-  
   return loaderContainer;
 }
 
@@ -190,7 +173,7 @@ async function translatePage(targetLang) {
     document.body,
     NodeFilter.SHOW_TEXT,
     {
-      acceptNode: function(node) {
+      acceptNode: function (node) {
         return node.textContent.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
       }
     }
@@ -206,21 +189,36 @@ async function translatePage(targetLang) {
   hideLoader();
 }
 
+document.addEventListener('keydown', (e) => {
+  if (!ACTIVE) return;
+
+  const isCtrlOrCmd = e.ctrlKey || e.metaKey;
+  if (isCtrlOrCmd) {
+    document.querySelectorAll('.lingo-surf-highlight').forEach(span => {
+      if (span.dataset.hovered === 'true') {
+        const isOriginal = span.classList.toggle('showing-original');
+        span.textContent = isOriginal ? span.dataset.original : span.dataset.translated;
+      }
+    });
+  }
+});
+
+/////
+
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (msg.action === 'activate') {
     if (ACTIVE) return;
     ACTIVE = true;
     translatePage(msg.lang);
-    sendResponse({status: 'translating'});
+    sendResponse({ status: 'translating' });
   } else if (msg.action === 'deactivate') {
     if (!ACTIVE) {
-      sendResponse({status: 'not_active'});
+      sendResponse({ status: 'not_active' });
       return;
     }
     ACTIVE = false;
     restoreOriginalTexts();
-    sendResponse({status: 'deactivated'});
+    sendResponse({ status: 'deactivated' });
   }
   return true;
 });
-

@@ -103,6 +103,7 @@ async function translateNode(node, targetLang) {
         span.textContent = translated;
         span.dataset.translated = translated;
         span.dataset.original = sentence;
+        span.title = 'Press Cmd/Ctrl to toggle translation';
         
         span.addEventListener('mouseenter', () => {
           span.dataset.hovered = 'true';

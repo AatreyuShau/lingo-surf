@@ -52,9 +52,6 @@ git clone https://github.com/AatreyuShau/lingo-surf.git
 
 # Navigate to the extension directory
 cd lingo-surf/chrome-extension
-
-# Install dependencies (if any)
-npm install
 ```
 
 ## Contributing

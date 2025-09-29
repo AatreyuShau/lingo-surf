@@ -2,11 +2,15 @@
 
 This guide will walk you through the process of installing Lingo Surf.
 
+<a href="/AatreyuShau/lingo-surf/releases/tag/Release" download>
+        Visit the Releases page for manual downloads
+</a>
+
 ---
 
 ## Quick Download
 
-<a href="https://github.com/AatreyuShau/lingo-surf/blob/main/chrome-extension.crx" download>
+<a href="/AatreyuShau/lingo-surf/releases/download/Release/chrome-extension.crx" download>
 <img src="docs/installation/Download crx.png" alt="Download raw file" width="600"/>
 
 ## Step-by-Step Installation after downloading the .crx file
@@ -46,7 +50,7 @@ This guide will walk you through the process of installing Lingo Surf.
 ## Alternative Installation
 
    - Download the `.zip` file
-    >> <a href="https://github.com/AatreyuShau/lingo-surf/blob/main/chrome-extension.zip" download>
+    >> <a href="/AatreyuShau/lingo-surf/releases/download/Release/chrome-extension.zip" download>
         Download Extension (.zip)
     </a>
    - Expand the `.zip` file in your file-explorer

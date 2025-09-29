@@ -4,9 +4,8 @@
 ![Chrome Web Store](https://img.shields.io/badge/Platform-Chrome-green)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
-<p align="center">
-    A sleek Chrome extension for seamless language learning while you surf the web. Translate words on any webpage with a beautiful, modern interface.
-</p>
+<p align="center"> A sleek Chrome extension for seamless language learning while you surf the web.</p>
+<p align="center"> Translate words on any webpage with a beautiful, modern interface.</p>
 
 ---
 
@@ -68,5 +67,5 @@ Contributions are welcome! Feel free to:
 ---
 
 <p align="center">
-    This project is licensed under the GNU GPLv3.0 License; see the ![LICENSE(https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE.md) file for details.
+    This project is licensed under the GNU GPLv3.0 License; see the ![LICENSE](https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE.md) file for details.
 </p>

@@ -69,7 +69,3 @@ Contributions are welcome! Feel free to:
 <p align="center">
     This project is licensed under the GNU GPLv3.0 License;
 </p>
-
-<a align="center" href="https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE.md" download>
-        LICENSE
-</a>

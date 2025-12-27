@@ -61,7 +61,8 @@ cd lingo-surf/chrome-extension
   <img src="https://contrib.rocks/image?repo=AatreyuShau/lingo-surf" />
 </a>
 
-Feel free to:
+##
+### Feel free to:
 - Report bugs
 - Suggest new features
 - Submit pull requests

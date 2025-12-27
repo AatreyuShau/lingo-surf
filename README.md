@@ -55,8 +55,13 @@ cd lingo-surf/chrome-extension
 ```
 
 ## Contributing
+### Contributions are welcome!
 
-Contributions are welcome! Feel free to:
+<a href="https://github.com/AatreyuShau/lingo-surf/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AatreyuShau/lingo-surf" />
+</a>
+
+Feel free to:
 - Report bugs
 - Suggest new features
 - Submit pull requests

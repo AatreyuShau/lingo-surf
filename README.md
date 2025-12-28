@@ -1,4 +1,4 @@
-# <img src="chrome-extension/icon128.png" alt="Lingo Surf Icon" width="32" style="vertical-align: middle;"> <img src="https://img.shields.io/badge/Lingo-Surf-a?style=for-the-badge&labelColor=%230C1117&color=%2302C184" alt="Lingo Surf"> 🥝
+# <img src="chrome-extension/icon128.png" alt="Lingo Surf Icon" width="32" style="vertical-align: middle;"> <img src="https://img.shields.io/badge/Lingo-Surf-a?style=for-the-badge&labelColor=%230C111735&color=%2302C184" alt="Lingo Surf"> 🥝
 
 [![License](https://img.shields.io/badge/License-GPLv3-orange?logo=gplv3&logoColor=white&logoSize=auto&labelColor=lightslategrey&color=orange)](https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE)
 ![Chrome Web Store](https://img.shields.io/badge/platform-chrome-green%3Flogo%3Dchromewebstore?logo=chromewebstore&logoColor=white&logoSize=auto&labelColor=lightslategrey&color=green)

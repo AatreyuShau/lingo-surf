@@ -1,8 +1,8 @@
 # <img src="chrome-extension/icon128.png" alt="Lingo Surf Icon" width="32" style="vertical-align: middle;"> Lingo Surf 🥝
 
-[![License](https://img.shields.io/badge/License-GPLv3-orange.svg?)](https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE)
-![Chrome Web Store](https://img.shields.io/badge/Platform-Chrome-green)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+[![License](https://img.shields.io/badge/License-GPLv3-orange?logo=gplv3&logoColor=white&logoSize=auto&labelColor=lightslategrey&color=orange)](https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE)
+![Chrome Web Store](https://img.shields.io/badge/platform-chrome-green%3Flogo%3Dchromewebstore?logo=chromewebstore&logoColor=white&logoSize=auto&labelColor=lightslategrey&color=green)
+![Version](https://img.shields.io/badge/version-1.0.0-blue?labelColor=lightslategrey)
 
 <p align="center"> A sleek Chrome extension for seamless language learning while you surf the web.</p>
 <p align="center"> Translate words on any webpage with a beautiful, modern interface.</p>
@@ -25,7 +25,7 @@
 ## Installation
 
    - Download the `.zip` file >>  |  <a href="https://github.com/AatreyuShau/lingo-surf/releases/download/Release/chrome-extension.zip" download>
-        ![Download Extension (.zip)](https://img.shields.io/badge/install-zip-green)
+        ![Download Extension (.zip)](https://img.shields.io/badge/install-zip-green?color=lightslategrey&labelColor=%2302C184)
     </a>
     
    - Expand the `.zip` file in your file-explorer
@@ -34,7 +34,7 @@
    - Click on the `Load Unpacked` button on the top-left
    - Load the unpacked folder
 
- > For a more detailed guide check the  |  [![Installation Guide](https://img.shields.io/badge/installation%20guide-grey)](https://github.com/AatreyuShau/lingo-surf/blob/main/INSTALLATION.md)
+ > For a more detailed guide check the  |  [![Installation Guide](https://img.shields.io/badge/installation%20guide-a?labelColor=lighslategrey&color=%2302C184)](https://github.com/AatreyuShau/lingo-surf/blob/main/INSTALLATION.md)
 
 ## How to Use
 

@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-GPLv3-orange?logo=gplv3&logoColor=white&logoSize=auto&labelColor=lightslategrey&color=orange)](https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE)
 ![Chrome Web Store](https://img.shields.io/badge/platform-chrome-green%3Flogo%3Dchromewebstore?logo=chromewebstore&logoColor=white&logoSize=auto&labelColor=lightslategrey&color=green)
-![Version](https://img.shields.io/badge/version-1.0.0-blue?labelColor=lightslategrey)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue?labelColor=lightslategrey)](https://github.com/AatreyuShau/lingo-surf/releases/tag/Release)
 
 <p align="center"> A sleek Chrome extension for seamless language learning while you surf the web.</p>
 <p align="center"> Translate words on any webpage with a beautiful, modern interface.</p>

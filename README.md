@@ -73,6 +73,7 @@ cd lingo-surf/chrome-extension
 </a>
 
 </div>
+
 ##
 ### Feel free to:
 - Report bugs

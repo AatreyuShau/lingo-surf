@@ -24,17 +24,17 @@
 
 ## Installation
 
-   - Download the `.zip` file
-    >> <a href="https://github.com/AatreyuShau/lingo-surf/releases/download/Release/chrome-extension.zip" download>
-        Download Extension (.zip)
+   - Download the `.zip` file >>  |  <a href="https://github.com/AatreyuShau/lingo-surf/releases/download/Release/chrome-extension.zip" download>
+        ![Download Extension (.zip)](https://img.shields.io/badge/install-zip-green)
     </a>
+    
    - Expand the `.zip` file in your file-explorer
    - Open Chrome and go to `chrome://extensions`
    - Turn on `Developer Mode`
    - Click on the `Load Unpacked` button on the top-left
    - Load the unpacked folder
 
- > For a more detailed guide check the ![Installation Guide](https://github.com/AatreyuShau/lingo-surf/blob/main/INSTALLATION.md)
+ > For a more detailed guide check the  |  [![Installation Guide](https://img.shields.io/badge/installation%20guide-grey)](https://github.com/AatreyuShau/lingo-surf/blob/main/INSTALLATION.md)
 
 ## How to Use
 

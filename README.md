@@ -1,11 +1,23 @@
-# <img src="chrome-extension/icon128.png" alt="Lingo Surf Icon" width="32" style="vertical-align: middle;"> <span style="vertical-align: sub;"><img src="https://img.shields.io/badge/Lingo-Surf-a?style=for-the-badge&labelColor=%230C111735&color=%2302C184" alt="Lingo Surf" vertical-align="baseline" width="250"></span>
+# <img src="chrome-extension/icon128.png" alt="Lingo Surf Icon" width="30" style="vertical-align: middle;"> Lingo-Surf 🥝
+
+<div align="center">
+  <br>
+  <br>
+  <br>
+  <img src="chrome-extension/icon128.png" alt="Lingo Surf Icon" width="120" style="vertical-align: middle;">
+  <span style="vertical-align: sub;"><img src="https://img.shields.io/badge/Lingo-Surf-a?style=for-the-badge&labelColor=%230C111735&color=%2302C184" alt="Lingo Surf" vertical-align="baseline" width="470"></span>
+</div>
+
+# <br>
+<div align="center">
+
+A sleek Chrome extension for seamless language learning while you surf the web.\
+Translate words on any webpage with a beautiful, modern interface.
 
 [![License](https://img.shields.io/badge/License-GPLv3-orange?logo=gplv3&logoColor=white&logoSize=auto&labelColor=lightslategrey&color=orange)](https://github.com/AatreyuShau/lingo-surf/blob/main/LICENSE)
 ![Chrome Web Store](https://img.shields.io/badge/platform-chrome-green%3Flogo%3Dchromewebstore?logo=chromewebstore&logoColor=white&logoSize=auto&labelColor=lightslategrey&color=green)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue?labelColor=lightslategrey)](https://github.com/AatreyuShau/lingo-surf/releases/tag/Release)
-
-<p align="center"> A sleek Chrome extension for seamless language learning while you surf the web.</p>
-<p align="center"> Translate words on any webpage with a beautiful, modern interface.</p>
+</div>
 
 ---
 
